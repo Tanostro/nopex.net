@@ -12,7 +12,7 @@ $mail->IsSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.web.de';                 // Specify main and backup server                                   // Set the SMTP port
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'noreply.nopex@web.de';                // SMTP username
-$mail->Password = 'Jacob1234';                  // SMTP password
+$mail->Password = '######';                  // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 
 $mail->From = 'noreply.nopex@web.de';
