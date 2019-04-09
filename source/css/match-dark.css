@@ -1,0 +1,150 @@
+:root {
+  --main-bg-color: #212121;
+  --main-txt-color: grey;
+  --main-box-bg-color: #303030;
+  --odd-index-bg-color: #424242;
+}
+
+/*######################################################################*/
+/*############################_ACTIVE-MATCH_############################*/
+/*######################################################################*/
+#loading { width: 100px; background-color: var(--main-box-bg-color); padding: 10px; position: absolute; left: 50%; top: 50%;
+          transform: translate(-50%, -50%); box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2); text-align: center;}
+#loading p{ margin: 0; display: inline-block; position: relative; top: -8px; margin-left: 5px;}
+.loader {
+  border: 4px solid #D3D3D3; /* Light grey */
+  border-top: 4px solid #23b4ed; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.ad-horizontal {width: 970px; height: 90px; background-color: #EDEDED; margin: 25px auto 0 auto;}
+.ad-vertical-left {width: 160px; height: 600px; background-color: #EDEDED; position: absolute;
+                  top: 130px; left: 20;}
+.ad-vertical-right {width: 160px; height: 600px; background-color: #EDEDED; position: absolute;
+                  top: 130px; right: 20;}
+@media screen and (max-width: 1670px){
+  .ad-vertical-right, .ad-vertical-left {display: none;}
+}
+
+#search-bar, #main-menu, #main-user-dropdwn-menu {z-index: 999999;}
+#errorbox { background-color: var(--main-box-bg-color); transform: translate(-50%, -50%); box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+         padding: 10px; position: absolute; left: 50%; top: 50%; text-align: center; width: 200px;}
+#content {width: 100%; overflow: scroll; height: calc(100% - 60px);}
+
+#errorbox p{margin: 5px; color: red; font-size: 20px; font-weight: 600;}
+#matchboard {margin: 25px auto 0 auto; min-height: 720px;}
+#matchboard .header {background-color: #2B6CA3; color: white;padding: 5px; border-top-left-radius: 5px;
+         border-top-right-radius: 5px;}
+#matchboard .foot {background-color: #B22222; color: white; padding: 5px; border-bottom-left-radius: 5px;
+         border-bottom-right-radius: 5px; font-size: 12px; text-align: right;}
+.Summoner {background-repeat: no-repeat; background-size: cover; height: 300px; width: 250px;
+          background-size: 250px auto; display: inline-block; border: grey 3px solid;}
+#matchboard.tenplayer {width: 1280px;}
+#matchboard.sixplayer {width: 768px;}
+.middle{width: 100%; height: 50px; font-size: 0;}
+.middle div {display: inline-block; }
+.middle .Ban{width: 40px; height: 40px; border-radius: 30%; background-color: black;}
+.middle img.Ban{filter: grayscale(0.7);}
+.middle div.Ban{display: inline-block;}
+.middle .redSide, .middle .blueSide {width: 50%; height: 50px;}
+.middle .blueSide{background-color: rgba(43, 108, 163, 0.9);}
+.middle .redSide {background-color: rgba(178, 34, 34, 0.9);}
+
+.middle .left{ margin-left: 5px;}
+.middle .left .Ban{  margin: 5px 0 5px 5px;}
+.middle .redSide{ text-align: right; }
+.middle .right {margin-right: 5px;}
+.middle .right .Ban{  margin: 5px 5px 5px 0;}
+.middle .percent{height: 50px; color: white; margin-top: 15px; font-size: 18px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+
+.middle .blueSide .percent{float: right; margin-right: 50px; }
+.middle .redSide .percent{float: left; margin-left: 50px; }
+.middle .toManyUnrakeds .percent{display: none;}
+
+.Summoner.BlueTeam {border-color: #2B6CA3;}
+.Summoner.RedTeam {border-color: #B22222;}
+.Summoner .head .left{ float: left;}
+.Summoner .sumIcon {width: 44px; border-radius: 100%; border: 1px solid black; margin: 5px 0 0 5px; z-index: 2000; position: relative;}
+.Summoner .sumLevel { display: inline-block; color: white; font-size: 12px; background-color: black; padding: 3px; border-radius: 50%;
+          position: relative; left: -20; min-width: 16px; text-align: center; z-index: 3000;}
+.Summoner .sumName { display: inline-block; font-size: 18px; color: white; padding: 3px 5px 3px 25px;
+           float: left; position: relative; left: -44; top: 12.5;  z-index: 1000;
+          width: 140px; overflow: hidden; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+.BlueTeam .sumName{background-image: linear-gradient(to right, #2B6CA3 40%, transparent);}
+.RedTeam .sumName{background-image: linear-gradient(to right, #B22222 40%, transparent);}
+.Summoner .sumMastery{ float: right; margin: -30px 5px 0 0; width: 48px;}
+.Summoner .sumMastery img{ width: 48px;}
+.Summoner .sumMastery div{ position: relative; color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+           font-size: 14px; width: 100%; top: -15px; text-align: center;}
+.Summoner .sumSpells { position: relative; margin-left: 10; margin-top: 60px; }
+.Summoner .sumSpells img{ width: 32px; display: block; border-radius: 100%; border: 1px solid black;}
+.Summoner .sumSpells img:last-child{margin-top: 5px;}
+.Summoner .bottom{ height: 180px; background-image: linear-gradient(to top, rgba(0,0,0,0.8) 40%, transparent);
+           position: relative; margin-top: -10px;}
+.Summoner .bottom .ranks {color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+           text-align: center; height: 91px;}
+.Summoner .bottom .ranks div {display: inline-block; position: relative; height: 91px;}
+.Summoner .bottom .ranks div div{display: block;height: auto; top: 0;}
+.Summoner .bottom .ranks div div:nth-child(3) { display: inline-block; bottom: 0; padding-right: 15px;
+         width: 100%; text-align: right; width: calc(100% - 15px); top: -20px;}
+.Summoner .bottom .ranks div div:nth-child(4) {  bottom: 0; font-size: 14px;
+          width: 100%; width: 100%; top: -20px; min-height: 19px; text-shadow: none;}
+.Summoner .bottom .ranks .wins {color: limegreen;}
+.Summoner .bottom .ranks .losses {color: red;}
+.Summoner .bottom .ranks img {width: 45px;}
+.Summoner .bottom .ranks div:nth-child(2)  img{width: 60px;}
+
+.Summoner .runes {margin-top: 25px; text-align: center;}
+.Summoner .runes .firstPath img:first-child{width: 30px;}
+.Summoner .runes .firstPath img{width: 25px;}
+.Summoner .runes .secondPath img{width: 20px;}
+.Summoner .runes .statRunes img{width: 20px;}
+
+.Summoner .runes .secondPath, .Summoner .runes .statRunes {display: inline-block;}
+.Summoner .runes .statRunes {margin-left: 15px;}
+
+/*######################################################################*/
+/*##########################_INACTIVE-MATCH_############################*/
+/*######################################################################*/
+
+.featured-matches { margin: auto; max-width: 960px; margin-top: 40px; text-align: center;}
+.featured-matches .head{padding: 5px 10px 5px 10px; color: white; background-color: #2B6CA3;}
+.featured-matches .head .spectate-btn{color: white; background-color: #23b4ed; display: inline-block;
+                  padding: 5px 10px 5px 10px;float: right; position: relative; top: -5; right: -10;}
+.featured-matches .match{background-color: var(--main-box-bg-color); width: 450px; text-align: left;
+                  margin: 15px; display: inline-block; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)}
+.featured-matches .match .bans{height: 22px; text-align: center; padding: 5px 10px 5px 10px;}
+.featured-matches .match .bans div{display: inline-block;}
+.featured-matches .match .bans .banPig{width: 20px; height: 20px; background-color: black;
+                  border-radius: 5px; margin: 1px; filter: grayscale(0.7);}
+.featured-matches .match .bans .blueTeam {float: left; border-left: #2B6CA3 solid 5px; padding-left: 5px;}
+.featured-matches .match .bans .redTeam {float: right; border-right: #B22222 solid 5px; padding-right: 5px;}
+
+.featured-matches .match .playerBoard{ padding: 0 10px 5px 10px;}
+.featured-matches .match .playerBoard .Sum {height: 30px; padding: 2px 5px 2px 5px; width: 185px; margin-bottom: 3px;}
+.featured-matches .match .playerBoard .Sum:nth-child(odd) {background-color: var(--odd-index-bg-color);}
+.featured-matches .match .playerBoard .sumIcon {width: 30px; border-radius: 7px;
+                  border-bottom-left-radius: 7px;}
+.featured-matches .match .playerBoard .spellIcon1 {width: 15px; border-bottom-left-radius: 7px;
+                  border-bottom-right-radius: 7px;}
+.featured-matches .match .playerBoard .spellIcon2 {position: relative; border-top-left-radius: 7px;
+                  border-top-right-radius: 7px; top: -15px; margin-left: -18px; width: 15px; }
+.featured-matches .match .playerBoard .Sum div{display: inline-block; line-height: 22px; overflow: hidden;
+                  top: -5px; position: relative; margin-left: 5px; max-width: 110px; font-size: 14px;}
+.featured-matches .match .playerBoard .blueTeam .Sum{border-left: 5px solid #2B6CA3;}
+.featured-matches .match .playerBoard .redTeam .Sum{border-right: 5px solid #B22222;}
+.featured-matches .match .playerBoard .blueTeam,
+.featured-matches .match .playerBoard .redTeam,
+.featured-matches .match .playerBoard .vs{display: inline-block;}
+.featured-matches .match .playerBoard .vs{width: 30px; text-align: center;  position: relative;
+                  top: -80;}

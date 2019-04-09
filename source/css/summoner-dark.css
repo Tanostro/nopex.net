@@ -1,0 +1,295 @@
+#content {text-align: center; height: calc(100% - 60px); width: 100%; overflow: scroll;}
+#search-bar, #main-menu, #main-user-dropdwn-menu {z-index: 999999;}
+
+
+/* ########################## - Summmoner set -############################## */
+#Summoner {text-align: left; width: 1080px; margin-top: 35px; display: inline-block;}
+#Summoner .header{height: 150px; width: 100%;}
+#Summoner .info{padding-top: 37.5px; padding-left: 25px; }
+#Summoner .icon { border-radius: 30%; }
+#Summoner .name { display: inline-block; font-size: 24px; position: relative; top: -27px; color:white;}
+#Summoner .level {font-size: 14px; border: 1px solid black; z-index: 2; margin-top: 30px;
+          margin-left: -20px; background-color: black; padding: 2px; line-height: 14px;
+          border-radius: 10px; color: white;}
+#Summoner .subheader{ float:left; background-color: rgba(43,108,163,0.95); padding: 5px; text-shadow: none;
+          height: 30px; width: 486px; color: white;}
+#Summoner button{margin-left: 20px; margin-right: 10px; cursor: pointer; background-color:  white; color: #2B6CA3;
+  padding: 3px; padding-left: 5px; padding-right: 5px;border: none; border-radius: 3px;
+  font-size: 14px; font-weight: 600; margin-top: 3px;}
+#Summoner button:hover, #Summoner button:disabled{ background-color: #3484c1; color: white; }
+#Summoner button:disabled{cursor: progress;}
+#Summoner #updatefont {font-size: 14px;}
+#sum-not-found {background-color: white; box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+                padding: 25px; width: 300px; margin: auto; margin-top: calc(50% - 150px)}
+#sum-not-found h1 {color: #2B6CA3;}
+/* old stuff */
+#Summoner a {color: white;}
+#summonerchamps { border-left: 2px solid #2B6CA3;border-bottom: 2px solid #2B6CA3;
+  background-color: rgba(255,255,255,0.9); text-shadow: none; color: black; height: 487px;}
+.masterypoints{
+z-index: 2; color: white; text-align: right; margin-right: 4px; margin-top: -26px;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; color: white;
+}
+#matchlist{background-color: rgba(255,255,255,0.9);border-right: 2px solid #2B6CA3;border-bottom: 2px solid #2B6CA3;
+  border-left: 2px solid #2B6CA3;height: auto; width: 814; margin: auto; float: left;}
+.headbox{ background-color: #3484c1; padding: 5px; color: white;}
+#sumInfo { background-color: rgba(0, 0, 0, 0.65); height: 120px; width: 260px; border-radius: 7px; border: 1px black solid;}
+.ranklist {margin: 0;
+  width: 100%; margin-top: 36px; width: 256px; }
+.rank {
+    width: 50px; float: left;}
+.r{ float: right; margin-top: -15px; position: relative;}
+.rank_img { margin-top: -10px;}
+.SumLevel{font-size: 14px; border: 1px solid black; z-index: 2; margin-top: 30px;
+          margin-left: -20px; background-color: black; padding: 2px; line-height: 14px;
+          border-radius: 10px;}
+.sumIcon{ border-radius: 30%; float: left; z-index: 1; padding: 3px;}
+.match { border-left: 7px solid; overflow: hidden; background-color: rgba(0, 0, 0, 0.65); padding: 6px;}
+.champpig {border: 1px solid black; border-radius: 10px; float: left; z-index: 1;}
+.champlvl{ float: left; font-size: 16px; border: 1px solid black; z-index: 2; margin-top: 30px;
+          margin-left: -20px; background-color: black; padding: 2px; line-height: 20px;
+          border-radius: 40px;}
+.lane {}
+.itemsquare { height: 36px; width: 36px; background-color: black; float: left; border-radius: 30%; margin: 2px;}
+.itempig { height: 36px; width: 36px; border-radius: 30%;}
+
+.champig { border: 1px solid black; border-radius: 30%;margin: 3px;}
+#champlist { padding-top: 5px; padding-bottom: 20px; box-shadow: 2px 2px 2px black; border-radius: 10px; background-color:  rgba(0, 0, 0, 0.4);  width: 60%; margin: auto; text-align: center;}
+.championbox { background-color: rgba(255,255,255,0.9); color: black; text-shadow: none; height: 70px;
+border-bottom: 2px solid #2B6CA3; border-right: 2px solid #2B6CA3; width: 358px; display: inline-block;
+overflow: hidden;}
+.championplace {background-color: rgba(52, 132, 193, 0.95); display: inline-block; width: 30px;  position: absolute; text-align: center; color: white; padding-top: 25px;  padding-bottom: 25px}
+
+.navpoint {padding-top: 4px; float: left; font-size: 24px; cursor: pointer; height: 36px; width: 146px;
+   background-color: rgba(43,108,163,0.95); text-align: center; text-shadow: none; color: white;}
+   .navpoint:hover { color: rgba(255,255,255,0.9);}
+input:checked + label div {background-color: rgba(52, 132, 193,0.95);}
+
+.leaguebtn {display: none;}
+.LeagueBox { cursor: pointer; width: 360px; height: 90px; border: none;
+  background-color: rgba(255, 255, 255, 0.9); float: left;}
+.LeagueBox center{ text-shadow: none; color: black;}
+.leaguebtn:checked + .LeagueBox{ padding: 0px; background-color: rgba(52, 132, 193, 0.95);}
+.leaguebtn:checked + .LeagueBox center{ text-shadow: none; color: white;}
+.ranktier{ float: right; font-size: 20px; margin-top: -25px; margin-right: -10px; font-family: Oswald; width: 20px;
+  text-align: center; color: black; text-shadow: none;}
+.leaguebtn:checked + .LeagueBox  .ranktier{ color: white;}
+.LeagueBox .rank_img { margin-top: 7px; }
+.rankinfo { float: right; width: 240px; margin-top: -80px; font-family: Oswald; text-shadow: -1px 0 black, 0 1px black,
+1px 0 black, 0 -1px black; color: white;}
+.rankinfo center{ font-size: 20px;}
+.leagueHead{ float: left; padding: 5px; height: 50px; background-color: rgba(52, 132, 193, 0.95); width: 782px;}
+.leagueHeadfont{ margin-left: 10px; margin-top: 10px; float:left; font-family: Oswald; text-shadow: none;font-size: 24px;}
+.TierChoice { float: right; margin-top: 15px; margin-right: 15px;}
+.Tierlist {color: black; text-shadow: none; display: none; margin-top: 60px; margin-bottom: 25px; background-color: rgba(255, 255, 255, 0.95);}
+.Tierbtn { float: left; text-align: center; font-size: 20px; text-shadow: none; width: 72px; height: 60px; margin: 0;
+  color: white; background:  rgba(52, 132, 193, 0.95); border: none;
+    cursor: pointer; font-family: Oswald; font-weight: 600;}
+.Tierbtn:hover {color: rgba(255,255,255,0.9);}
+.Tierbtn span {position: relative; top: 18px;}
+input:checked + .Tierbtn{  color: white; background: rgba(43, 108, 163,0.95); border: none; cursor: pointer; }
+.TierListheader{  border-top-right-radius: 7px; border-top-left-radius: 7px;padding: 5px;  background-color: rgba(0, 0, 0, 0.8); font-size: 20px;text-align: center;}
+
+.playerslot {height: 48px; padding: 3px; padding-left: 10px;}
+.LeagueProgress{float: right; margin-top: 2px; margin-left: 5px;}
+.lp1 {margin-left: 1px; margin-right: 1px;float: left; width: 14px;height: 14px; background-color: lightgrey;  border-radius: 100%;}
+.lp2 {margin-left: 1px; margin-right: 1px;float: left; width: 14px;height: 14px; background-color: #F22222;  border-radius: 100%;}
+.lp3 {margin-left: 1px; margin-right: 1px;float: left; width: 14px;height: 14px; background-color: #06cc06;  border-radius: 100%;}
+
+#LeagueListSD,#LeagueListF3,#LeagueListF5 {display: none; padding-top: 90px;}
+#F3:checked ~ #LeagueListF3 {display: block;}
+#SD:checked ~ #LeagueListSD {display: block;}
+#F5:checked ~ #LeagueListF5 {display: block;}
+
+#SDcheckI:checked ~ #SDtierI, #SDcheckII:checked ~ #SDtierII, #SDcheckIII:checked ~ #SDtierIII,
+#SDcheckIV:checked ~ #SDtierIV, #SDcheckV:checked ~ #SDtierV{display: block;}
+
+#F3checkI:checked ~ #F3tierI, #F3checkII:checked ~ #F3tierII, #F3checkIII:checked ~ #F3tierIII,
+#F3checkIV:checked ~ #F3tierIV, #F3checkV:checked ~ #F3tierV{display: block;}
+
+#F5checkI:checked ~ #F5tierI, #F5checkII:checked ~ #F5tierII, #F5checkIII:checked ~ #F5tierIII,
+#F5checkIV:checked ~ #F5tierIV, #F5checkV:checked ~ #F5tierV{display: block;}
+
+#lastupdatefont {font-size: 14px;}
+#updating {font-size: 14px; display: none;}
+#reload_sub{margin-right: 10px; cursor: pointer; background-color:  white; color: #2B6CA3; padding: 3px; padding-left: 5px; padding-right: 5px;border: none; border-radius: 3px; font-size: 14px; font-weight: 600;}
+#reload_sub:hover, #reload_sub:disabled{ background-color: #3484c1; color: white; }
+#reload_sub:disabled{cursor: progress;}
+
+#livematch_box { margin-top: 40px; text-shadow: none; text-align: center; background-color: rgba(50, 147, 50, 0.65);}
+
+#overview, #match_history, #champions, #leagues,
+#overviewbox, #match_historybox, #championsbox, #leaguesbox {display: none;}
+#overview:checked ~ #overviewbox{display: block;}
+#match_history:checked ~ #match_historybox{display: block;}
+#champions:checked ~ #championsbox{display: block;}
+#leagues:checked ~ #leaguesbox{display: block;}
+
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #3484c1;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+#summoner-search{background-color: #2B6CA3; width: 400px; margin: auto; margin-top: 50px; text-align: right;}
+#summoner-search form{margin: 0;}
+#summoner-search #Title{float: left; padding: 5px;padding-left: 10px; text-shadow: none;}
+#summoner-sum_name{ width: 120px; border: none;padding: 7px; font-size: 16px; font-weight: 600; background-color: white; color: black}
+#summoner-region{ height: 32px; background-color: white; margin-left: -4px;
+  padding: 8px 10px 8px 10px;font-size: 14px; font-weight: 600; border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;}
+#summoner-search_sub{ cursor: pointer; border-radius: 0; background-color: #225d8e; color: white; border: none; padding: 6px ; font-size: 16px;
+  font-weight: 600; margin-left: -4px;}
+#challanger-header{height: 36px; width: 290px; background-color: #3484c1; text-shadow: none; margin: auto; margin-top: 20px; padding: 5px;}
+#challanger-header img{ float:left;}
+#challanger-header div{ float:left; padding: 8px;}
+.player {width: 300px; background-color: rgba(255,255,255,0.9); text-shadow: none; margin: auto; margin-top: 5px;}
+.player div{ display: inline-block;}
+.place { background-color: #2B6CA3; padding: 5px; width: 21px; text-align: center;}
+.name { color: black; padding: 5px;}
+.points { color: black; padding: 5px; float: right;}
+
+
+.dropdownframe  .dropbtn {
+    background-color: #3484c1;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+.dropdownframe  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgba(43,108,163,0.7);
+  }
+.dropdownframe  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+.dropdownframe  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.dropdownframe .dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.dropdownframe  .dropdown-content button:hover {background-color: #ddd; cursor: pointer;}
+ .show {display:block;}
+  #champion-sort-menu button{font-family: Oswald; padding: 5px;}
+  #champion-sort-menu{height: 31px; width: 100%; background-color: #3484c1;margin-top: 20px;}
+  #Summoner  .dropdownframe{display: inline-block;}
+  #drop-down-btn_1 {min-width: 130px;}
+  #drop-down-btn_2 {min-width: 120px;}
+  #drop-down-menu_2{width: 100px;}
+  .menubtn{ width: 100%; background-color: #f1f1f1; border: none;}
+  .dropdownpfeil{    font-family: Fredoka One;
+    font-size: 18px;
+    display: inline-block;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);}
+/* ######################## -no Summmoner set -############################## */
+.leaguelist {background-color: white; padding: 5px; width: 220px; margin: 20px;
+            display: inline-block; margin-top: 5%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); text-align: left;}
+.leaguelist .head {margin-bottom: 10px; border-bottom: #F9F9F9 solid 2px;}
+.leaguelist .head img{width: 30px;}
+.leaguelist .head span{ position: relative; top: -10; left: 5;}
+.leaguelist input, .sumBox {display: none;}
+.leaguelist .sum {margin-bottom: 5px;}
+.leaguelist .sum:nth-child(odd) { background-image: linear-gradient(to right, #F9F9F9 50%, transparent );}
+.leaguelist .sum div{display: inline-block; min-width: 24px; text-align: center; color: white;
+            background-color: #2B6CA3; padding: 2px 5px 2px 5px; margin-right: 5px; }
+.leaguelist .sum span {float: right; position: relative; top: 2;}
+.sumBox {display: none; width: 220px; background-color: white;  min-height: 445px;}
+.foot-nav {width: 100%; text-align: center; margin-top: 10px; padding-top: 5px;
+          border-top: #F9F9F9 solid 2px;}
+.foot-nav div{ padding: 2px; display: inline-block; cursor: pointer; color: lightgrey;}
+.foot-nav div:hover{ color: black;}
+.rankedclosed {text-align: center; padding: 120px 35px 0 35px;}
+
+#challengerleagues_1:checked ~ #challengerleaguesBox_1{display: block;}
+#challengerleagues_2:checked ~ #challengerleaguesBox_2{display: block;}
+#challengerleagues_3:checked ~ #challengerleaguesBox_3{display: block;}
+#challengerleagues_4:checked ~ #challengerleaguesBox_4{display: block;}
+#challengerleagues_5:checked ~ #challengerleaguesBox_5{display: block;}
+#challengerleagues_6:checked ~ #challengerleaguesBox_6{display: block;}
+#challengerleagues_7:checked ~ #challengerleaguesBox_7{display: block;}
+#challengerleagues_8:checked ~ #challengerleaguesBox_8{display: block;}
+#challengerleagues_9:checked ~ #challengerleaguesBox_9{display: block;}
+#challengerleagues_10:checked ~ #challengerleaguesBox_10{display: block;}
+#challengerleagues_11:checked ~ #challengerleaguesBox_11{display: block;}
+#challengerleagues_12:checked ~ #challengerleaguesBox_12{display: block;}
+#challengerleagues_13:checked ~ #challengerleaguesBox_13{display: block;}
+#challengerleagues_14:checked ~ #challengerleaguesBox_14{display: block;}
+#challengerleagues_15:checked ~ #challengerleaguesBox_15{display: block;}
+
+#masterleagues_1:checked ~ #masterleaguesBox_1{display: block;}
+#masterleagues_2:checked ~ #masterleaguesBox_2{display: block;}
+#masterleagues_3:checked ~ #masterleaguesBox_3{display: block;}
+#masterleagues_4:checked ~ #masterleaguesBox_4{display: block;}
+#masterleagues_5:checked ~ #masterleaguesBox_5{display: block;}
+#masterleagues_6:checked ~ #masterleaguesBox_6{display: block;}
+#masterleagues_7:checked ~ #masterleaguesBox_7{display: block;}
+#masterleagues_8:checked ~ #masterleaguesBox_8{display: block;}
+#masterleagues_9:checked ~ #masterleaguesBox_9{display: block;}
+#masterleagues_10:checked ~ #masterleaguesBox_10{display: block;}
+#masterleagues_11:checked ~ #masterleaguesBox_11{display: block;}
+#masterleagues_12:checked ~ #masterleaguesBox_12{display: block;}
+#masterleagues_13:checked ~ #masterleaguesBox_13{display: block;}
+#masterleagues_14:checked ~ #masterleaguesBox_14{display: block;}
+#masterleagues_15:checked ~ #masterleaguesBox_15{display: block;}
+
+#grandmasterleagues_1:checked ~ #grandmasterleaguesBox_1{display: block;}
+#grandmasterleagues_2:checked ~ #grandmasterleaguesBox_2{display: block;}
+#grandmasterleagues_3:checked ~ #grandmasterleaguesBox_3{display: block;}
+#grandmasterleagues_4:checked ~ #grandmasterleaguesBox_4{display: block;}
+#grandmasterleagues_5:checked ~ #grandmasterleaguesBox_5{display: block;}
+#grandmasterleagues_6:checked ~ #grandmasterleaguesBox_6{display: block;}
+#grandmasterleagues_7:checked ~ #grandmasterleaguesBox_7{display: block;}
+#grandmasterleagues_8:checked ~ #grandmasterleaguesBox_8{display: block;}
+#grandmasterleagues_9:checked ~ #grandmasterleaguesBox_9{display: block;}
+#grandmasterleagues_10:checked ~ #grandmasterleaguesBox_10{display: block;}
+#grandmasterleagues_11:checked ~ #grandmasterleaguesBox_11{display: block;}
+#grandmasterleagues_12:checked ~ #grandmasterleaguesBox_12{display: block;}
+#grandmasterleagues_13:checked ~ #grandmasterleaguesBox_13{display: block;}
+#grandmasterleagues_14:checked ~ #grandmasterleaguesBox_14{display: block;}
+#grandmasterleagues_15:checked ~ #grandmasterleaguesBox_15{display: block;}

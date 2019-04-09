@@ -1,0 +1,13 @@
+{
+  "euw1":{"name":"EUW","id":"euw1"},
+  "eun1":{"name":"EUN","id":"eun1"},
+  "na1":{"name":"NA","id":"na1"},
+  "br1":{"name":"BR","id":"br1"},
+  "jp1":{"name":"JP","id":"jp1"},
+  "kr":{"name":"KR","id":"kr"},
+  "la1":{"name":"LAN","id":"la1"},
+  "la2":{"name":"LAS","id":"la2"},
+  "oc1":{"name":"OCE","id":"oc1"},
+  "tr1":{"name":"TR","id":"tr1"},
+  "ru":{"name":"RU","id":"ru"}
+}

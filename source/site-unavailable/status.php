@@ -1,0 +1,5 @@
+<?php
+
+$online = true;
+
+ ?>

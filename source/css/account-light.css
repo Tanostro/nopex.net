@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700|Passion+One|Bangers|Chewy|Russo+One|Fredoka+One");
+@font-face { font-family: 'Blackout';
+             src: url('/source/fonts/Blackout-2am.ttf') format('truetype'); }
+
+body {background-color: #F9F9F9; margin: 0; padding: 0; font-family: Oswald;}
+a {text-decoration: none; color: black;}
+a:visited {text-decoration: none; color: black;}
+form {margin: auto;}
+i {height: 16px; width: 16px; text-align: center;}
+#error-box {width: calc(100% - 10px); background-color: #F9F9F9; padding: 5px; border-left: 3px red solid; margin-bottom: 10px;}
+#login-box, #create-account-box, #email-ver-box, #league-ver-box, #reset-email-box { width: 260px; background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); padding: 20px 20px 0 20px; text-align: center;}
+#login-box h4{margin: 0 0 20px 0; text-align: left; margin-left: 15px; font-size: 20px;
+color: #2B6CA3;}
+input{width: 200px; border: none; border-bottom: 2px solid #2B6CA3; font-size: 18px; padding: 5px; margin: 5px;}
+input:focus{outline: none;}
+button{ width: 220px; border: none; padding: 5px 10px 5px 10px; font-weight: 800; margin-top:30px;
+  color: white; background-color: #2B6CA3; cursor: pointer; height: 31px;}
+#alternate-btn {border-top: solid 2px #f9f9f9; margin-top: 20px; padding-top: 20px; text-align: center;}
+#alternate-btn a div{display: inline-block; border: solid 2px #2B6CA3; color: #2B6CA3;
+              padding:  5px 0 5px 0; width: 220px; font-family: arial; font-size: 12px; font-weight: 800;}
+#forgotten-password {margin-top: 20px; position: absolute; right: 14px; bottom: 14px;}
+#forgotten-password a{color: #2B6CA3;font-size: 12px;}
+
+#create-account-box {width: 480px; text-align: left;}
+#create-account-box .input {display: inline-block;}
+#create-account-box h4{margin: 0 0 20px 0; text-align: left;  font-size: 20px;
+  color: #2B6CA3;}
+#create-account-box .again{ margin-left: 25px;}
+#create-account-box .solo{ margin-right: 100px;}
+#create-account-box button, #create-account-box #alternate-btn {position: relative; left: 50%; transform: translateX(-50%);}
+#create-account-box .checkbox{ text-align: center; margin-top: 20px;}
+#create-account-box .checkbox a{ color: #2B6CA3; font-weight: 600;}
+#create-account-box .checkbox input{ margin-right: 5px; width: auto;}
+
+#language {font-size: 12px; margin: 30px 0 5px 0; text-align: left;}
+#language label {display: inline-block; width: 70px; text-align: right;}
+#language-btn {cursor: pointer; padding: 5px;}
+#language-dropdwn{display: none;}
+#language-dropdwn:checked + label {background-color: #2B6CA3; color: white; }
+#language button {width: 100%;  margin: 0; display: block; background-color: unset; color: black;
+  font-size: 10px;
+  padding: 5px; font-weight: 400; height: auto; }
+#language-dropdwn-content { position: absolute; width:100%;  background-color: #F9F9F9; display: none;
+  width: 70px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+#language-dropdwn:checked + label #language-dropdwn-content{display: block;}
+
+#email-ver-box h4, #league-ver-box h4 {text-align: left; color: #2B6CA3; margin: 0 0 20px 0; font-size: 20px;}
+#email-ver-box #info {width: calc(100% - 10px); background-color: #F9F9F9; padding: 5px;
+  border-left: 3px green solid; margin-bottom: 20px;}
+#email-ver-box input {text-align: center;}
+
+#email-ver-box form{ border-bottom: solid 2px #f9f9f9; margin-bottom: 20px; padding-bottom: 20px; }
+#resend-email div{ display: inline-block; border: solid 2px #2B6CA3; color: #2B6CA3;
+              padding:  5px 0 5px 0; width: 216px; font-family: arial; font-size: 12px; font-weight: 800;}
+
+#league-ver-box #info{font-size: 14px;}
+#league-ver-box #code{padding: 5px; color: #2B6CA3; font-weight: 600; margin-top: 20px;}
+
+#league-ver-box input{ width: 160px; margin-top: 20px;}
+#region {width: 50px; display: inline-block; background-color: #2B6CA3; padding: 5px 0 5px 0; color: white;
+          cursor: pointer; border-radius: 10px; text-align: center;}
+#region-dropdwn-menu,#region-dropdwn {display: none;}
+#region-dropdwn:checked + label #region-dropdwn-menu{ display: block;}
+#region-dropdwn:checked + label #region{ padding-bottom: 15px; border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px; }
+#region-dropdwn-menu {background-color: #F9F9F9; padding: 5px; width: 215px; margin-left: 17px;}
+#region-dropdwn-menu button {width: 50px; margin: 0; background-color: unset; color: black; font-weight: 400; font-family: Oswald;}
+#region-dropdwn-menu button:hover {background-color: #2B6CA3; color: white; }
+
+#reset-email-box h4{margin: 0 0 20px 0; text-align: left;  font-size: 20px; color: #2B6CA3;}
+#reset-email-box  #confirm-box {background-color: rgba(50,205,50,0.3); padding: 5px; margin-bottom: 10px;}
