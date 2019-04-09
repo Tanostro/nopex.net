@@ -1,0 +1,19 @@
+{
+  "login": "Login",
+  "email": "Email",
+  "password": "Password",
+  "sign-in": "Sign In",
+  "create-account": "Create Account",
+  "forgotten-password": "Forgot password?",
+  "lang": "Sprache",
+  "empty_form": "Please fill in all fields.",
+  "database_connection_error": "Cant connect to the Loginserver. Please try again later.",
+  "reset-password": "Password reset",
+  "send-email": "Send Reset E-Mail",
+  "confirm-send-email": "E-Mail has been sent.",
+  "new-password": "New password",
+  "confirm-new-password": "Confirm new password",
+  "set-new-password": "Save new password",
+  "passwords_dont_match": "The passwords do not match.",
+  "email-password-dont-match": "The password is not correct for this e-mail address"
+}

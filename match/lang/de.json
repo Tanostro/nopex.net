@@ -1,0 +1,7 @@
+{
+  "loading": "Lädt",
+  "t_sum_not_found": "Beschwörer nicht gefunden",
+  "sum_not_found": "Der Beschwörer %s existiert nicht.",
+  "t_match_not_found": "Spiel nicht gefunden",
+  "match_not_found": "ist nicht in einem Spiel oder es ist nicht beobachtbar."
+}

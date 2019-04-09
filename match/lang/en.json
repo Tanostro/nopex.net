@@ -1,0 +1,7 @@
+{
+  "loading": "Loading",
+  "t_sum_not_found": "Summoner not found",
+  "sum_not_found": "The Summoner %s dont exist.",
+  "t_match_not_found": "Match not found",
+  "match_not_found": "is currently not in a game or it is not observable."
+}

@@ -1,0 +1,19 @@
+{
+  "login": "Anmeldung",
+  "email": "Email",
+  "password": "Passwort",
+  "sign-in": "Anmelden",
+  "create-account": "Account erstellen",
+  "forgotten-password": "Passwort vergessen?",
+  "lang": "Sprache",
+  "empty_form": "Fülle bitte alle Felder aus.",
+  "database_connection_error": "Verbindung zum Loginserver konnte nicht hergestellt werden. Bitte versuche es später erneut.",
+  "reset-password": "Passwort zurücksetzen",
+  "send-email": "Sende E-Mail",
+  "confirm-send-email": "E-Mail wurde gesendent.",
+  "new-password": "Neues Passwort",
+  "confirm-new-password": "Bestätige Passwort",
+  "set-new-password": "Neues Passwort speichern",
+  "passwords_dont_match": "Die Passwörter stimmen nicht überein.",
+  "email-password-dont-match": "Das Passwort stimmt nicht für diese E-Mail Adresse"
+}
